@@ -11,6 +11,8 @@
 		268B06762A8EA58700F41FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B06752A8EA58700F41FE5 /* ViewController.swift */; };
 		268B06782A8EA58A00F41FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268B06772A8EA58A00F41FE5 /* Assets.xcassets */; };
 		268B067B2A8EA58A00F41FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268B06792A8EA58A00F41FE5 /* Main.storyboard */; };
+		268B06832A8EA59100F41FE5 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B06822A8EA59100F41FE5 /* Engine.swift */; };
+		268B06852A8EA59900F41FE5 /* shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 268B06842A8EA59900F41FE5 /* shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		268B06772A8EA58A00F41FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		268B067A2A8EA58A00F41FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		268B067C2A8EA58A00F41FE5 /* TIPE_Noise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TIPE_Noise.entitlements; sourceTree = "<group>"; };
+		268B06822A8EA59100F41FE5 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		268B06842A8EA59900F41FE5 /* shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				268B06772A8EA58A00F41FE5 /* Assets.xcassets */,
 				268B06792A8EA58A00F41FE5 /* Main.storyboard */,
 				268B067C2A8EA58A00F41FE5 /* TIPE_Noise.entitlements */,
+				268B06822A8EA59100F41FE5 /* Engine.swift */,
+				268B06842A8EA59900F41FE5 /* shader.metal */,
 			);
 			path = TIPE_Noise;
 			sourceTree = "<group>";
@@ -131,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268B06852A8EA59900F41FE5 /* shader.metal in Sources */,
 				268B06762A8EA58700F41FE5 /* ViewController.swift in Sources */,
+				268B06832A8EA59100F41FE5 /* Engine.swift in Sources */,
 				268B06742A8EA58700F41FE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
