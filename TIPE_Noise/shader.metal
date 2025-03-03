@@ -7,6 +7,7 @@ using namespace metal;
 #define frameRate (60*flowRate)
 #define dt (1.0/frameRate)
 #define pixelToMeter 6300
+#define ParticlesOnScreen 600
 
 
 
@@ -43,7 +44,7 @@ kernel void pixels(texture2d<half, access::read> textureIn [[texture(1)]],
     float2 screenSize = float2(textureOut.get_width(), textureOut.get_height());
     float2 normalizedPos = float2(id)/screenSize;
     half3 pixelColor;
-    float2 st = float2(10);
+    float2 st = float2(ParticlesOnScreen);
     float2 ipos = floor(normalizedPos*st)/st;
     float2 fpos = fract(normalizedPos*st);
     
